@@ -1,0 +1,185 @@
+﻿@model school.Models.parent
+@{
+    ViewBag.Title = "ParentRegistration";
+    Layout = "~/Views/Layout/_LayoutPage1.cshtml";
+}
+<head>
+    <title>Delete</title>
+    <style>
+        #dateofbirth {
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+
+@using (@Html.BeginForm("Delete", "admin", FormMethod.Post, new { @class = "form-group" }))
+{
+    <div class="header">
+        <h2 style="text-align:center; color:red; font-size:30px;" >Are u sure To Delte This Member</h2>
+    </div>
+    <br />
+    <div class="body">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">email</i>
+                    </span>
+                    <div class="form-line">
+
+                        @Html.TextBoxFor(Model => Model.email, new { placeholder = "Email Address" ,disabled="disapled"})
+                        <br />
+             
+                        @*<span style="color:red;"></span>*@
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">lock</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.pass, new { placeholder = "Password", disabled = "disapled" })
+                        <br />
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">lock</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.confirmpass, new { placeholder = "Confirm Password", disabled = "disapled" })
+                        <br />
+                     
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">person</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.fname, new { placeholder = "First Name", disabled = "disapled" })
+                        <br />
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">person</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.lname, new { placeholder = "Last Name", disabled = "disapled" })
+                        <br />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">date_range</i>
+                    </span>
+                    <div class="form-line">
+
+                        @Html.TextBoxFor(Model => Model.dateofbirth)
+                        <br />
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">phonelink_ring</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.mobile, new { placeholder = "Mobile Number", disabled = "disapled" })
+                        <br />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">home_work</i>
+                    </span>
+                    <div class="form-line">
+
+                        @Html.TextBoxFor(Model => Model.address, new { placeholder = "Address", disabled = "disapled" })
+                        <br />
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">class</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.nationalid, new { placeholder = "National Id", disabled = "disapled" })
+                        <br />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-6">
+                @Html.DropDownListFor(Model => Model.genderlid, (SelectList)ViewBag.parentg, "Choose Gender", new { @class = "form-control", disabled = "disapled" })
+                <br />
+            </div>
+            <div class="col-lg-6">
+                @Html.DropDownListFor(Model => Model.cityid, (SelectList)ViewBag.parentc, "Choose City", new { @class = "form-control", disabled = "disapled" })
+                <br />
+
+
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-lg-12">
+                <input class="btn bg-pink btn-lg btn-block waves-effect" type="submit" value="Delete">
+                @*<input type="reset" value="Clear" class="btn btn-warning font-weight-bold" />*@
+
+            </div>
+        </div>
+
+
+    </div>
+}

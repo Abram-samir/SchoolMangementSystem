@@ -1,0 +1,53 @@
+﻿@using Language=school.Language.Events.EV_AC_RE;
+@model school.Models.activities
+@{
+    ViewBag.Title = Language.TActivities;
+    Layout = "~/Views/Layout/_LayoutPage1.cshtml";
+}
+
+<body>
+    @using (@Html.BeginForm("Activity", "Events", FormMethod.Post, new { @class = "form-group" }))
+    {
+        <div class="header">
+            <h2>@Language.AddActivitiesDetails</h2>
+        </div>
+        <br />
+
+        <div class="body">
+            <div class="card" style="padding-left:20px;">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="input-group">
+
+                            <div class="form-line" style="height:150px;">
+
+                                <h4 style="color:black">@Language.ActivityDetails</h4>
+                                @*<textarea style="font-size:17px;" placeholder="Please type what you want...." name="reportdetails" class="form-control"></textarea>*@
+                                @Html.TextAreaFor(Model => Model.activity, new { @class = "form-control", placeholder =Language.PTWUW})
+                                <span> @Html.ValidationMessageFor(Model => Model.activity, null, new { style = "color:red" })</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <input class="btn bg-pink btn-lg btn-block waves-effect" type="submit" value="@Language.Save">
+                </div>
+
+            </div>
+        </div>
+        <br />
+
+
+
+    }
+
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>

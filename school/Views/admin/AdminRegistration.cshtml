@@ -1,0 +1,132 @@
+﻿@using Language=school.Language.Reg.AdminRegistration.AdminRegistration; 
+@model school.Models.admin
+@{
+    ViewBag.Title = Language.AR;
+    Layout = "~/Views/Layout/_LayoutPage1.cshtml";
+}
+
+<body>
+
+@using (@Html.BeginForm("AdminRegistration", "admin", FormMethod.Post, new { @class = "form-group" }))
+{
+    <div class="header">
+        <h2>@Language.AdminMembership</h2>
+    </div>
+    <br />
+    <div class="body">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">email</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model =>Model.email, new { placeholder = Language.EmailAddress})
+                      
+                        <br />
+                        <span>  @Html.ValidationMessageFor(Model => Model.email, null, new { style = "color:red"})</span>
+                      
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">lock</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.pass, new { placeholder = Language.Password })
+
+                        <br />
+                        <span>  @Html.ValidationMessageFor(Model => Model.pass, null, new { style = "color:red"})</span>
+                      
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">lock</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.confirmpass, new { placeholder = Language.CPassword })
+
+                        <br />
+                        <span>  @Html.ValidationMessageFor(Model => Model.confirmpass, null, new { style = "color:red"})</span>
+                     
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-lg-12">
+                <input class="btn bg-pink btn-lg btn-block waves-effect" type="submit" value="@Language.Save">
+            </div>
+        </div>
+
+
+    </div>
+}
+    <div id="PersonTableContainer">
+
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery-3.5.1.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+    <script src="~/Scripts/jtable/jquery.jtable.min.js"></script>
+    <script>
+       
+        $(function () {
+
+            $('#PersonTableContainer').jtable({
+                title: 'Table of Admins',
+                actions: {
+                    listAction: '/admin/AdminList',
+                    //createAction: '/admin/CreateAdmin',
+                    updateAction: '/admin/UpdateAdmin',
+                    deleteAction: '/admin/DeleteAdmin'
+                },
+                fields: {   
+                    id: {
+                        key: true,
+                        list: false
+                    },
+                    email: {
+                        title: 'Admin Email',
+                        width: '40%'
+                    },
+                    pass: {
+                        title: 'Pass',
+                        width: '20%'
+                    },
+                    confirmpass: {
+                        title: 'confirmpass',
+                        width: '20%'
+                    }
+                    //RecordDate: {
+                    //    title: 'Record date',
+                    //    width: '30%',
+                    //    type: 'date',
+                    //    create: false,
+                    //    edit: false
+                    //}
+                }
+            });
+            $('#PersonTableContainer').jtable('load');
+        });
+    </script>
+</body>

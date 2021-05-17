@@ -1,0 +1,36 @@
+﻿@model school.Models.admin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            <br />
+            @Html.LabelFor(a => a.email)
+            @Html.TextBoxFor(a => a.email)
+            @Html.ValidationMessageFor(a => a.email, null, new { style = "color:red" })
+            <br />
+            @Html.LabelFor(a => a.pass)
+            @Html.TextBoxFor(a => a.pass)
+            @Html.ValidationMessageFor(a => a.pass, null, new { style = "color:red" })
+            <br />
+            <center>
+                <input type="submit" value="Login" />
+            </center>
+
+        }
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>
+</html>

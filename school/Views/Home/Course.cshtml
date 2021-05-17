@@ -1,0 +1,78 @@
+﻿@using Language=school.Language.HomeWork.Course.Course;
+@model school.Models.course
+@{
+    ViewBag.Title = Language.TCourse;
+    Layout = "~/Views/Layout/_LayoutPage1.cshtml";
+}
+
+<body>
+    @using (@Html.BeginForm("Course", "Home", FormMethod.Post, new {@class="form-group" }))
+    {
+        <div class="header">
+            <h2>@Language.AddNewCourse</h2>
+        </div>
+        <br />
+        <div class="body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="input-group">
+                        
+                        <div class="form-line">
+
+                            @Html.DropDownListFor(Model => Model.SemesterId, (SelectList)ViewBag.CourseSemester , Language.ChooseSemester, new { @class = "form-control" })
+                            <br /><br /><br /><br />
+                            <span>  @Html.ValidationMessageFor(Model => Model.SemesterId, null, new { style = "color:red" })</span>
+                           
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">lock</i>
+                        </span>
+                        <div class="form-line">
+                            @Html.TextBoxFor(Model => Model.coursename, new { placeholder = Language.CourseName })
+                            <br />
+                            <span>  @Html.ValidationMessageFor(Model => Model.coursename, null, new { style = "color:red" })</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">lock</i>
+                        </span>
+                        <div class="form-line">
+                            @Html.TextBoxFor(Model => Model.coursecode, new { placeholder = Language.CourseCode})
+                            <br />
+                            <span>  @Html.ValidationMessageFor(Model => Model.coursecode, null, new { style = "color:red" })</span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+           
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <input class="btn bg-pink btn-lg btn-block waves-effect" type="submit" value=@Language.Save>
+                </div>
+            </div>
+
+          </div> 
+    }
+
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>
+

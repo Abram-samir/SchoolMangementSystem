@@ -1,0 +1,102 @@
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\school.dll.config
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\school.dll
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\school.pdb
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\System.Web.Helpers.dll
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\System.Web.Mvc.dll
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\System.Web.Razor.dll
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\System.Web.Webpages.Deployment.dll
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\System.Web.Webpages.dll
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\System.Web.Webpages.Razor.dll
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\System.Web.Razor.xml
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\System.Web.Webpages.xml
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\System.Web.Webpages.Deployment.xml
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\System.Web.Webpages.Razor.xml
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\System.Web.Helpers.xml
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\bin\System.Web.Mvc.xml
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.dll
+c:\users\abraam samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.pdb
+C:\Users\Abraam Samir\Documents\Visual Studio 2013\Projects\school\school\bin\EntityFramework.dll
+C:\Users\Abraam Samir\Documents\Visual Studio 2013\Projects\school\school\bin\EntityFramework.SqlServer.dll
+C:\Users\Abraam Samir\Documents\Visual Studio 2013\Projects\school\school\bin\EntityFramework.xml
+C:\Users\Abraam Samir\Documents\Visual Studio 2013\Projects\school\school\bin\EntityFramework.SqlServer.xml
+C:\Users\Abraam Samir\Documents\Visual Studio 2013\Projects\school\school\obj\Debug\school.Language.Layout.Layout.resources
+C:\Users\Abraam Samir\Documents\Visual Studio 2013\Projects\school\school\obj\Debug\school.csproj.GenerateResource.Cache
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.Reg.AdminRegistration.AdminRegistration.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.Reg.ParentRegistration.ParentRegistration.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.Reg.SchoolRegistration.SchoolRegistration.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.Reg.StudentRegistration.StudentRegistration.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.GAS.Attendance.Attendance.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.GAS.Grades.Grades.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.GAS.Schedule.Schedule.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.HomeWork.Course.Course.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.HomeWork.HomeWork.HomeWork.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.Events.EV_AC_RE.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\bin\ar-EG\school.resources.dll
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\ar-EG\school.resources.dll
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.Layout.Layout.ar-Eg.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.Events.EV_AC_RE.ar-EG.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.GAS.Attendance.Attendance.ar-EG.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.GAS.Grades.Grades.ar-EG.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.GAS.Schedule.Schedule.ar-EG.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.HomeWork.Course.Course.ar-EG.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.HomeWork.HomeWork.HomeWork.ar-EG.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.Reg.AdminRegistration.AdminRegistration.ar-EG.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.Reg.ParentRegistration.ParentRegistration.ar-EG.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.Reg.SchoolRegistration.SchoolRegistration.ar-EG.resources
+C:\Users\Abraam Samir\documents\visual studio 2013\Projects\school\school\obj\Debug\school.Language.Reg.StudentRegistration.StudentRegistration.ar-EG.resources
+C:\Users\Abraam Samir\Documents\Visual Studio 2013\Projects\school\school\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Abraam Samir\Documents\Visual Studio 2013\Projects\school\school\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Abraam Samir\Documents\Visual Studio 2013\Projects\school\school\obj\Debug\school.csprojAssemblyReference.cache
+C:\Users\Abraam Samir\Documents\Visual Studio 2013\Projects\school\school\obj\Debug\school.csproj.CoreCompileInputs.cache
+C:\Users\Abraam Samir\Documents\Visual Studio 2013\Projects\school\school\obj\Debug\school.csproj.CopyComplete
+E:\coure asp(senior)\school\school\bin\school.dll.config
+E:\coure asp(senior)\school\school\bin\school.dll
+E:\coure asp(senior)\school\school\bin\school.pdb
+E:\coure asp(senior)\school\school\bin\ar-EG\school.resources.dll
+E:\coure asp(senior)\school\school\bin\EntityFramework.dll
+E:\coure asp(senior)\school\school\bin\EntityFramework.SqlServer.dll
+E:\coure asp(senior)\school\school\bin\System.Web.Helpers.dll
+E:\coure asp(senior)\school\school\bin\System.Web.Mvc.dll
+E:\coure asp(senior)\school\school\bin\System.Web.Razor.dll
+E:\coure asp(senior)\school\school\bin\System.Web.Webpages.Deployment.dll
+E:\coure asp(senior)\school\school\bin\System.Web.Webpages.dll
+E:\coure asp(senior)\school\school\bin\System.Web.Webpages.Razor.dll
+E:\coure asp(senior)\school\school\bin\Microsoft.Web.Infrastructure.dll
+E:\coure asp(senior)\school\school\bin\EntityFramework.xml
+E:\coure asp(senior)\school\school\bin\EntityFramework.SqlServer.xml
+E:\coure asp(senior)\school\school\bin\System.Web.Razor.xml
+E:\coure asp(senior)\school\school\bin\System.Web.Webpages.xml
+E:\coure asp(senior)\school\school\bin\System.Web.Webpages.Deployment.xml
+E:\coure asp(senior)\school\school\bin\System.Web.Webpages.Razor.xml
+E:\coure asp(senior)\school\school\bin\System.Web.Helpers.xml
+E:\coure asp(senior)\school\school\bin\System.Web.Mvc.xml
+E:\coure asp(senior)\school\school\bin\Microsoft.Web.Infrastructure.xml
+E:\coure asp(senior)\school\school\obj\Debug\school.csprojAssemblyReference.cache
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.Events.EV_AC_RE.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.GAS.Attendance.Attendance.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.GAS.Grades.Grades.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.GAS.Schedule.Schedule.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.HomeWork.Course.Course.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.HomeWork.HomeWork.HomeWork.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.Reg.AdminRegistration.AdminRegistration.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.Layout.Layout.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.Reg.ParentRegistration.ParentRegistration.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.Reg.SchoolRegistration.SchoolRegistration.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.Reg.StudentRegistration.StudentRegistration.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.Events.EV_AC_RE.ar-EG.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.GAS.Attendance.Attendance.ar-EG.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.GAS.Grades.Grades.ar-EG.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.GAS.Schedule.Schedule.ar-EG.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.HomeWork.Course.Course.ar-EG.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.HomeWork.HomeWork.HomeWork.ar-EG.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.Layout.Layout.ar-Eg.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.Reg.AdminRegistration.AdminRegistration.ar-EG.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.Reg.ParentRegistration.ParentRegistration.ar-EG.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.Reg.SchoolRegistration.SchoolRegistration.ar-EG.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.Language.Reg.StudentRegistration.StudentRegistration.ar-EG.resources
+E:\coure asp(senior)\school\school\obj\Debug\school.csproj.GenerateResource.cache
+E:\coure asp(senior)\school\school\obj\Debug\school.csproj.CoreCompileInputs.cache
+E:\coure asp(senior)\school\school\obj\Debug\ar-EG\school.resources.dll
+E:\coure asp(senior)\school\school\obj\Debug\school.csproj.CopyComplete
+E:\coure asp(senior)\school\school\obj\Debug\school.dll
+E:\coure asp(senior)\school\school\obj\Debug\school.pdb

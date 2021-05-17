@@ -1,0 +1,48 @@
+﻿@using Language=school.Language.HomeWork.HomeWork.HomeWork;
+@model school.Models.homework
+@{
+    ViewBag.Title = Language.HW;
+    Layout = "~/Views/Layout/_LayoutPage1.cshtml";
+}
+!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <script src="~/Scripts/jquery-3.5.1.js"></script>
+    <script>
+        $(function () {
+
+            $("#CountryList").change(function () {
+
+                $("#MyList").empty();
+                $("#MyList").append("<option> Choose City </option>");
+
+                var CountryID = $("#CountryList option:selected").val();
+
+                $.ajax({
+
+                    url: "/Disatrict/GetCityDataByCountryID",
+                    data: { CntryID: CountryID },
+                    success: function (res) {
+
+                        $.each(res, function (i, e) {
+
+                            $("#MyList").append("<option value='" + e.Id + "'> " + e.CityName + " </option>");
+
+
+                        });
+                    }
+
+                });
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+    @us
+</body>
+</html>

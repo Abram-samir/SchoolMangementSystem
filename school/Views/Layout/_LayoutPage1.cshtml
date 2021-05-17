@@ -1,0 +1,248 @@
+﻿@using Language = school.Language.Layout.Layout;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>@ViewBag.title</title>
+    <link href="content/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Favicon-->
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <!-- Bootstrap Core Css -->
+    <link href="~/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Waves Effect Css -->
+    <link href="~/plugins/node-waves/waves.css" rel="stylesheet" />
+    <!-- Animation Css -->
+    <link href="~/plugins/animate-css/animate.css" rel="stylesheet" />
+    <!-- Morris Chart Css-->
+    <link href="~/plugins/morrisjs/morris.css" rel="stylesheet" />
+    <!-- Custom Css -->
+    <link href="~/css/style.css" rel="stylesheet">
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="~/css/themes/all-themes.css" rel="stylesheet" />
+    <link href="~/Css/themes/all-themes.css" rel="stylesheet" />
+
+    @if (Session["lang"] == "en-US")
+    {
+        <link href="~/Content/Layout.css" rel="stylesheet" />
+    }
+    else
+    {
+        <link href="~/Css/ArabStyle.css" rel="stylesheet" />
+    }
+    <link href="~/Css/Layout.css" rel="stylesheet" />
+    @*<link href="~/Scripts/jtable/themes/metro/crimson/jtable.min.css" rel="stylesheet" />*@
+</head>
+<body class="thead-dark" dir="@Language.ltr">
+    <!-- Page Loader -->
+    @*<div class="page-loader-wrapper">
+            <div class="loader">
+                <div class="preloader">
+                    <div class="spinner-layer pl-red">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <p>Please wait...</p>
+            </div>
+        </div>*@
+    <!-- #END# Page Loader -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid" style="background-color:tomato;">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="~/admin/AdminRegistration">5 @Language.Days ( @Language.SAMS )</a>
+
+                <a href="/Languages/Arabic" class="aa" >@Language.Arabic</a>
+
+                <a href="/Languages/English" class="aa" >@Language.English</a>
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+            <div class="user-info">
+                <div class="image">
+                    <img src="images/user.png" width="48" height="48" alt="User" />
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</div>
+                    <div class="email">Admin@example.com</div>
+                    <div class="btn-group user-helper-dropdown">
+                        @*<i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>*@
+                        <br />
+                        <br/>
+                        <form action="/Account/Login" method="post">
+                            <input type="submit" value="Sign Out" style="background-color:wheat;color:red;"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">@Language.MNAVIGATION</li>
+
+
+
+                    <li style="margin-bottom:7px;">
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">assignment</i>
+                            <span style="font-size:16px;">@Language.Registeration </span>
+                        </a>
+
+                        <ul class="ml-menu">
+                            <li class="active">
+                                <a href="~/admin/AdminRegistration">@Language.AdminRegistration</a>
+                            </li>
+                            <li class="active">
+                                <a href="~/admin/ParentRegistration">@Language.ParentRegisteration</a>
+                            </li>
+                            <li class="active">
+                                <a href="~/admin/SchoolRegistration">@Language.SchoolRegisteration</a>
+                            </li>
+                            <li class="active">
+                                <a href="~/admin/StudentRegistration">@Language.StudentRegisteration</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li style="margin-bottom:7px;">
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">view_list</i>
+                            <span style="font-size:16px;">@Language.HomeWork</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li class="active">
+                                <a href="~/Home/Course">@Language.Course</a>
+                            </li>
+                            <li class="active">
+                                <a href="~/Home/HomeWork">@Language.HomeWork</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li style="margin-bottom:7px;">
+                        <a href="~/GAS/Grades">
+
+                            <i class="material-icons">devices</i>
+                            <span style="font-size:16px;">@Language.Grades</span>
+                        </a>
+
+                    </li>
+
+                    <li style="margin-bottom:7px;">
+                        <a href="~/Events/Event">
+
+                            <i class="material-icons">email</i>
+                            <span style="font-size:16px;">@Language.Events</span>
+                        </a>
+
+                    </li>
+
+                    <li style="margin-bottom:7px;">
+                        <a href="~/GAS/Attendance">
+
+                            <i class="material-icons">flight_takeoff</i>
+                            <span style="font-size:16px;">@Language.Attendance</span>
+                        </a>
+
+                    </li>
+
+                    <li style="margin-bottom:7px;">
+                        <a href="~/Events/Activity">
+
+                            <i class="material-icons">equalizer</i>
+                            <span style="font-size:16px;">@Language.Activities</span>
+                        </a>
+
+                    </li>
+
+                    <li style="margin-bottom:7px;">
+                        <a href="~/GAS/Schedule">
+
+                            <i class="material-icons">bookmark</i>
+                            <span style="font-size:16px;">@Language.Schedule</span>
+                        </a>
+
+                    </li>
+
+                    <li style="margin-bottom:7px;">
+                        <a href="~/Events/Report">
+
+                            <i class="material-icons">face</i>
+                            <span style="font-size:16px;">@Language.Reports</span>
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal">
+                <div class="copyright">
+                    &copy; @Language.Y2019 - @Language.Y2020 <a href="javascript:void(0);"></a>.
+                </div>
+
+            </div>
+            <!-- #Footer -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        <!-- Right Sidebar -->
+        <!-- #END# Right Sidebar -->
+    </section>
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Basic Validation -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @*<script src="~/Scripts/jquery-1.10.2.js"></script>*@
+    <!-- Jquery Core Js -->
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core Js -->
+    <script src="~/plugins/bootstrap/js/bootstrap.js"></script>   @*m4 lazm*@
+    <!-- Select Plugin Js -->
+    <script src="~/plugins/bootstrap-select/js/bootstrap-select.js"></script> @*m4 lazm*@
+    <!-- Slimscroll Plugin Js -->
+    <script src="~/plugins/jquery-slimscroll/jquery.slimscroll.js"></script> @*m4 lazm*@
+    <!-- Waves Effect Plugin Js -->
+    <script src="~/plugins/node-waves/waves.js"></script>
+
+    <!-- Sparkline Chart Plugin Js -->
+    <script src="~plugins/jquery-sparkline/jquery.sparkline.js"></script> @*m4 lazm*@
+    <!-- Custom Js -->
+    <script src="~/js/admin.js"></script>
+    <script src="~/js/pages/index.js"></script>
+    <!-- Demo Js -->
+    <script src="~/js/demo.js"></script>
+
+</body>
+</html>

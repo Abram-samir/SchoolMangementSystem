@@ -1,0 +1,65 @@
+﻿@model IEnumerable<school.Models.parent>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+    @*<h1>
+        <a href="/Employee/Create">Create New Employee</a>
+    </h1>*@
+
+    <table class="table table-striped table-hover table-bordered text-center">
+        <thead class="thead-dark">
+            <tr>
+                
+                <th>Email</th>
+                <th>Pasword</th>
+                <th>Confirm password</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Date</th>
+                <th>Phone</th>
+                <th>Address</th>   
+                <th>National Id</th>
+                <th>Gender</th>
+                <th>Country</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.email</td>
+                    <td>@item.pass</td>
+                    <td>@item.confirmpass</td>
+                    <td>@item.fname</td>
+                    <td>@item.lname</td>
+                    <td>@item.dateofbirth</td>
+                    <td>@item.mobile</td>
+                    <td>@item.address</td>
+                    <td>@item.nationalid</td>
+                    <td>@item.SchoolGender.gender</td>
+                    <td>@item.parentcity.city</td>
+                    <td><a href="/admin/Update/@item.id" class="btn btn-primary">Update</a></td>
+                    <td><a href="/admin/Delete/@item.id" class="btn btn-danger">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+
+</body>
+</html>

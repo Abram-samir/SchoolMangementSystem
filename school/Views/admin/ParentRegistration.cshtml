@@ -1,0 +1,197 @@
+﻿@using Language=school.Language.Reg.ParentRegistration.ParentRegistration;
+@model school.Models.parent
+@{
+    ViewBag.Title = Language.PR;
+    Layout = "~/Views/Layout/_LayoutPage1.cshtml";
+}
+<head>
+    <title>person</title>
+    <style>
+        #dateofbirth {
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+@using (@Html.BeginForm("ParentRegistration", "admin", FormMethod.Post,new{@class="form-group"}))
+{
+    <div class="header">
+        <h2>@Language.ParentMembership</h2>
+    </div>
+    <br />
+    <div class="body">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">email</i>
+                    </span>
+                    <div class="form-line">
+
+                        @Html.TextBoxFor(Model => Model.email, new { placeholder = Language.EmailAddress })
+                        <br />
+                      <span>  @Html.ValidationMessageFor(Model => Model.email, null, new { style = "color:red"})</span>
+                        @*<span style="color:red;"></span>*@
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">lock</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.pass, new { placeholder = Language.Password })
+                        <br />
+                        <span>  @Html.ValidationMessageFor(Model => Model.pass, null, new { style = "color:red" })</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">lock</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.confirmpass, new { placeholder = Language.CPassword})
+                        <br />
+                        <span>  @Html.ValidationMessageFor(Model => Model.confirmpass, null, new { style = "color:red" })</span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">person</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.fname, new { placeholder = Language.FN})
+                        <br />
+                        <span>  @Html.ValidationMessageFor(Model => Model.fname, null, new { style = "color:red" })</span>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">person</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.lname, new { placeholder = Language.LN })
+                        <br />
+                        <span>  @Html.ValidationMessageFor(Model => Model.lname, null, new { style = "color:red" })</span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">date_range</i>
+                    </span>
+                    <div class="form-line">
+
+                        @Html.TextBoxFor(Model => Model.dateofbirth, new { type = "date",@class="form-control" })
+                        <br />
+                        <span>  @Html.ValidationMessageFor(Model => Model.dateofbirth, null, new { style = "color:red" })</span>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">phonelink_ring</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.mobile, new { placeholder = Language.MobileNumber })
+                        <br />
+                        <span>  @Html.ValidationMessageFor(Model => Model.mobile, null, new { style = "color:red" })</span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">home_work</i>
+                    </span>
+                    <div class="form-line">
+
+                        @Html.TextBoxFor(Model => Model.address, new { placeholder = Language.Address })
+                        <br />
+                        <span>  @Html.ValidationMessageFor(Model => Model.address, null, new { style = "color:red" })</span>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">class</i>
+                    </span>
+                    <div class="form-line">
+                        @Html.TextBoxFor(Model => Model.nationalid, new { placeholder = Language.NId })
+                        <br />
+                        <span>  @Html.ValidationMessageFor(Model => Model.nationalid, null, new { style = "color:red" })</span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-6">
+                @Html.DropDownListFor(Model => Model.genderlid, (SelectList)ViewBag.parentgender, Language.CHGender, new { @class = "form-control" })
+                <br /><br /><br />
+                <span>  @Html.ValidationMessageFor(Model => Model.genderlid, null, new { style = "color:red" })</span>
+            </div>
+            <div class="col-lg-6">
+                @Html.DropDownListFor(Model => Model.cityid, (SelectList)ViewBag.parentcity,Language.CHCity, new { @class = "form-control" })
+                <br /><br /><br />
+                
+                <span>  @Html.ValidationMessageFor(Model => Model.cityid, null, new { style = "color:red" })</span>
+                
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-lg-12">
+                <input class="btn bg-pink btn-lg btn-block waves-effect" type="submit" value="@Language.Save">
+            </div>
+        </div>
+
+
+    </div>
+}
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>
